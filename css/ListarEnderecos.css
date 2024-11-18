@@ -1,0 +1,44 @@
+main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table {
+    border: 2px solid #FFF;
+    width: 50vw;
+}
+
+th {
+    border: 1px solid #FFF;
+    padding: 10px;
+    text-align: start;
+}
+
+#legenda-tabela {
+    color: #9140FF;
+    background-color: #FFF;
+}
+
+#legenda-tabela th {
+    border: 2px solid #000;
+    text-align: center;
+}
+
+#btns {
+    text-align: center;
+}
+
+.btn-tabela {
+    width: 68px;
+    height: 21px;
+    border: none;
+    border-radius: 3px;
+    background-color: #9140FF;
+    color: #FFF;
+    font-weight: 700;
+    cursor: pointer;
+}
