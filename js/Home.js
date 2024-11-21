@@ -53,11 +53,3 @@ GENEROS.map((g) => {
         </div>
     `
 })
-
-function logoutUser() {
-    let confirmLogout = confirm('Tem certeza que deseja fazer logout?')
-    if(confirmLogout){
-        localStorage.removeItem('user')
-        window.location.reload()
-    }
-}
