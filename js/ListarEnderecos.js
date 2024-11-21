@@ -1,7 +1,7 @@
 const url = 'https://go-wash-api.onrender.com/api/auth/address'
-let token = JSON.parse(localStorage.getItem('user')).access_token
 
 async function listarEndereco() {
+    let token = JSON.parse(localStorage.getItem('user')).access_token
     let table = document.getElementById('enderecos')
 
     let api = await fetch(url, {

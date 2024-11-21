@@ -1,4 +1,5 @@
 async function excluirEndereco(id) {
+    let token = JSON.parse(localStorage.getItem('user')).access_token
     let deletarEndereco = confirm('Você quer mesmo deletar esse endereço?')
 
     if (deletarEndereco) {
