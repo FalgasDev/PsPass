@@ -38,26 +38,9 @@ async function listarEndereco() {
                 </tr>
             `
         })
+        return
     }
-}
-
-async function excluirEndereco(id) {
-    let deletarEndereco = confirm('Você quer mesmo deletar esse endereço?')
-
-    if (deletarEndereco) {
-        let api = await fetch(`${url}/${id}`, {
-            method: "DELETE",
-            headers: {
-                "Authorization": `Bearer ${token}`
-            }
-        })
-
-        if (api.ok) {
-            alert('Endereço deletado')
-            listarEndereco()
-            return
-        }
-    }
+    alert('Erro ao listar endereços')
 }
 
 listarEndereco()
